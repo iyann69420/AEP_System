@@ -1,0 +1,228 @@
+.menu {
+    
+    left: -250px;
+}
+
+.menu.open {
+    right: 30px; /* Move the menu back on-screen when the 'open' class is applied */
+}
+
+.menu ul li a:hover {
+    color: orange;
+}
+
+.text-center .menu {
+    text-align: left;
+}
+
+.text-center #sidebarCollapse {
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+    position: absolute; /* Add this to position the sub-menu properly */
+    top: 100%; /* Position the sub-menu below the parent */
+    left: 0; /* Align the sub-menu with the left edge of the parent */
+    background-color: #111 !important;
+    min-width: 150px;
+    z-index: 1;
+}
+.sub-menu {
+    display: none;
+}
+
+.sub-menu li {
+    padding: 0px 0;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #fff !important;
+    display: block;
+    background-color: #111;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown:hover a {
+    color: #111;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+.sidebar ul li ul li a {
+    cursor: pointer; /* Set the cursor to pointer (finger) */
+    /* Add other styles as needed for your design */
+}
+
+.sidebar {
+width: 250px;
+height: 100%;
+position: fixed;
+top: 0;
+left: -250px;
+background-color: #111; /* Black background color */
+transition: left 0.3s ease;
+overflow-y: auto;
+font-family: Arial, sans-serif; /* Improved font */
+color: white; /* Text color */
+
+}
+
+.sidebar.active {
+left: 0;
+}
+
+.sidebar-title {
+font-size: 1.8rem; /* Larger title font size */
+padding: 10px 0;
+text-align: center;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 10px;
+}
+.sidebar ul li {
+margin-bottom: 10px;
+padding-left: 10px; /* Adjust this value for the desired indentation */
+}
+
+.sidebar ul li a {
+padding: 5px 0; /* Adjust the top and bottom padding as needed */
+}
+
+.sidebar a {
+text-decoration: none;
+display: block;
+padding: 10px;
+transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+color: white;
+}
+
+.sidebar ul li div.icon-link:hover .link_name {
+color: #f39c12; /* Change the text color to orange on hover */
+}
+
+.sidebar a:hover {
+background-color: #f39c12; /* Orange hover color */
+color: black; /* Change text color on hover */
+}
+
+.content {
+margin-left: 0; /* Change this to 0 to fill the space when sidebar is open */
+padding: 20px;
+font-family: Arial, sans-serif;
+color: #333;
+transition: margin-left 0.3s ease; /* Add transition */
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+.logout-button {
+
+bottom: 20px;
+left: 20px;
+/* Adjust the positioning as needed */
+}
+
+
+.logout-btn {
+background-color: #f39c12; /* Orange logout button color */
+color: white;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+
+}
+
+.logout-btn:hover {
+background-color: #e67e22; /* Slightly darker orange on hover */
+}
+
+/* Style adjustments for sidebar links on hover */
+.sidebar a:hover {
+background-color: #f39c12;
+color: black;
+padding-left: 15px;
+transition: background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease;
+}
+
+
+
+#sidebarCollapse {
+/* Button styles */
+
+top: 0px;
+left: 260px; /* Adjust this value to your preference */
+z-index: 999;
+cursor: pointer;
+background: transparent;
+border: none;
+color: white;
+left: 250px;
+position: absolute;
+
+/* Other styles */
+}
+
+/* Optional: Style to change the color of the SVG icon when hovered */
+#sidebarCollapse:hover .svg-icon path {
+fill: #f39c12; /* Change this to the desired color */
+}
+
+
+
+.status-label.pending {
+background-color: #ffcc00; /* Yellow */
+color: #333; /* Text color */
+}
+
+.status-label.packed {
+background-color: #ff6600; /* Orange */
+color: #fff; /* Text color */
+}
+
+.status-label.for-delivery {
+background-color: #3399ff; /* Blue */
+color: #fff; /* Text color */
+}
+
+.status-label.cancelled {
+background-color: #ff3333; /* Red */
+color: #fff; /* Text color */
+}
+
+.status-label.delivered {
+background-color: #00cc66; /* Green */
+color: #fff; /* Text color */
+}
+
+.status-label.on-the-way {
+background-color: purple; /* Custom color for "On the Way" */
+color: #fff; /* Text color */
+}
