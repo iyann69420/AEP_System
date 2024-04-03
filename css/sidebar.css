@@ -181,7 +181,7 @@ top: 0px;
 left: 260px; /* Adjust this value to your preference */
 z-index: 999;
 cursor: pointer;
-background: transparent;
+background-color: #111; 
 border: none;
 color: white;
 left: 250px;
