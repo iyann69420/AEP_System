@@ -1,6 +1,6 @@
 <?php
 include ('./partials/sidebar.php');
-include ('./connection/constants.php');
+
 ?>
 
 <div class = "main-content">
