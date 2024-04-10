@@ -1,0 +1,18 @@
+.main-content {
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    
+
+}

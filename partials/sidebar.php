@@ -1,8 +1,4 @@
-<?php
 
-
-
-?>
 
 <style>
 
@@ -13,7 +9,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athelete Event Place Dashboard</title>
-    <link rel="stylesheet" href="../admin/css/admin.css">
+
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/admin.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8iZSL+poG6eA6q8QDH7g3uKEO/4F+sl5LU6I5LdQDO/1u2wnf50pdPw1x" crossorigin="anonymous">
 
@@ -48,7 +46,7 @@
                     </div>
                     <ul class="sub-menu">
                         <br>
-                        <li><a href="sports/sports.php">Sports</a></li>
+                        <li><a href="sports.php">Sports</a></li>
 
                     </ul>
                 </li>
