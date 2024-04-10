@@ -78,7 +78,7 @@ top: 0;
 left: -250px;
 background-color: #111; /* Black background color */
 transition: left 0.3s ease;
-overflow-y: auto;
+overflow-y: auto;   
 font-family: Arial, sans-serif; /* Improved font */
 color: white; /* Text color */
 
@@ -149,6 +149,11 @@ left: 20px;
 /* Adjust the positioning as needed */
 }
 
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .logout-btn {
 background-color: #f39c12; /* Orange logout button color */
@@ -225,4 +230,10 @@ color: #fff; /* Text color */
 .status-label.on-the-way {
 background-color: purple; /* Custom color for "On the Way" */
 color: #fff; /* Text color */
+}
+
+a.logout {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
