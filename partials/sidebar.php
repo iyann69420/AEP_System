@@ -93,3 +93,4 @@ include ('./connection/constants.php');
 
 <!-- script here -->
 <script src="javascript/sidebar.js"></script>
+<script src="javascript/modal.js"></script>

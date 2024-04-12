@@ -33,8 +33,33 @@
         
         <br><br>
 
-        <a href="<?php echo SITEURL; ?>admin/add-brands.php" class="btn-primary">Add Sports</a>
+        <button id="addSportBtn" class="btn-primary">Add Sports</button>
+
         <br /><br /><br />
+
+       <!-- Modal content -->
+        <!-- Modal content -->
+        <div id="addSportModal" class="modal">
+        
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+                <h2>Add Sport</h2>
+
+                <form id="addSportForm" method="POST" action="<?php echo SITEURL; ?>admin/add-brands.php">
+                    <label for="sportName">Sport Name:</label>
+                    <input type="text" id="sportName" name="sportName" required>
+                    <input type="submit" class="btn-primary" value="Add">
+                </form>
+
+                <!-- Cancel button to exit the modal -->
+                <button id="cancelBtn" class="btn-secondary">Cancel</button>
+                
+                
+            </div>
+
+        </div>
+
 
         <table class="tbl-full">
             <tr>
