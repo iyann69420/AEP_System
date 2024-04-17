@@ -50,6 +50,7 @@ include ('./connection/constants.php');
                     <ul class="sub-menu">
                         <br>
                         <li><a href="sports.php">Sports</a></li>
+                        <li><a href="users.php">Users</a></li>
 
                     </ul>
                 </li>
