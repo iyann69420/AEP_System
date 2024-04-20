@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2024 at 08:38 AM
+-- Generation Time: Apr 20, 2024 at 09:43 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -64,6 +64,17 @@ CREATE TABLE `sports` (
   `tables/courts` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `sports`
+--
+
+INSERT INTO `sports` (`sport_id`, `name`, `description`, `tables/courts`) VALUES
+(20, 'wag1', NULL, ''),
+(21, 'wag11', NULL, ''),
+(22, 'ayoko na', NULL, ''),
+(24, 'ayoko naa', NULL, ''),
+(25, 'aaa', NULL, '');
+
 -- --------------------------------------------------------
 
 --
@@ -73,12 +84,22 @@ CREATE TABLE `sports` (
 CREATE TABLE `users` (
   `id` int(10) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `fullname` varchar(50) DEFAULT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `middleinitials` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
   `contact` varchar(50) NOT NULL,
   `address` varchar(250) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `firstname`, `middleinitials`, `lastname`, `contact`, `address`, `email`, `password`) VALUES
+(1, '09161661368', 'Ian', 'B', 'Salgado', 'Trecw', 'ayygoo', 'wow@gmail.com', '$2y$10$nVMdNkrZttxTxhCpaOvlTueirMJqGP/tcDaeUTqGJq/'),
+(2, '09161661368', 'Ian', 'B', 'Salgado', 'Trecw', 'ayygoo', 'ejpower@gmail.com', '$2y$10$hIOYJklmmFvrCadWisTxjeZv7Ld17B4OfI0n2/RNOFK');
 
 --
 -- Indexes for dumped tables
@@ -127,10 +148,16 @@ ALTER TABLE `reservations`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `sports`
+--
+ALTER TABLE `sports`
+  MODIFY `sport_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
