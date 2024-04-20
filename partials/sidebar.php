@@ -1,13 +1,7 @@
-<?php 
-include ('../connection/constants.php');
+<?php
+include('../connection/constants.php');
 
 ?>
-
-<style>
-
-</style>
-
-<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +16,7 @@ include ('../connection/constants.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
 </head>
 
-
-
-<body>
-    <div class="menu text-center">
-        <div class="wrapper">
-
-            <button id="sidebarCollapse">
-                <svg class="svg-icon" style="width: 2em; height: 2em; vertical-align: middle; fill: currentColor; overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M232.369231 282.813046h559.261538a31.507692 31.507692 0 0 0 0-63.015384h-559.261538a31.507692 31.507692 0 0 0 0 63.015384zM791.630769 480.492308h-559.261538a31.507692 31.507692 0 0 0 0 63.015384h559.261538a31.507692 31.507692 0 0 0 0-63.015384zM791.630769 741.186954h-559.261538a31.507692 31.507692 0 0 0 0 63.015384h559.261538a31.507692 31.507692 0 0 0 0-63.015384z" />
-                </svg>
-            </button>
-
-
-        </div>
-    </div>
-
+<div class="parent-sidebar">
     <div class="sidebar" id="sidebar">
         <div class="wrapper">
             <a href="index.php"> <!-- Add this line to make the title clickable -->
@@ -88,11 +67,14 @@ include ('../connection/constants.php');
         </a>
     </div>
 
+    <button id="sidebarCollapse">
+        <svg class="svg-icon" style="width: 2em; height: 2em; vertical-align: middle; fill: currentColor; overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M232.369231 282.813046h559.261538a31.507692 31.507692 0 0 0 0-63.015384h-559.261538a31.507692 31.507692 0 0 0 0 63.015384zM791.630769 480.492308h-559.261538a31.507692 31.507692 0 0 0 0 63.015384h559.261538a31.507692 31.507692 0 0 0 0-63.015384zM791.630769 741.186954h-559.261538a31.507692 31.507692 0 0 0 0 63.015384h559.261538a31.507692 31.507692 0 0 0 0-63.015384z" />
+        </svg>
+    </button>
+</div>
 
 
-</body>
-
-</html>
 
 <!-- script here -->
 <script src="../javascript/sidebar.js"></script>

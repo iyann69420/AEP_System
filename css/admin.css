@@ -1,11 +1,39 @@
-.main-content {
-    background-color: #f1f2f6;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+@import url(sidebar.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f2f6;
+}
+
+#addSportBtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.content {
     padding: 20px;
+    display: grid;
+    gap: 1em;
+    margin-left: var(--sidebar-width);
   }
-  
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+.card {
+  padding: 1em;
+  background-color: white;
+  flex: 1 0 calc(50% - 20px); /* Adjust width as needed */
+  box-sizing: border-box;
+}
 
 .col-4{
     width: 18%;
