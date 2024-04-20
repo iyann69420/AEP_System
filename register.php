@@ -4,25 +4,39 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
 <head>
     <title>Register Acount</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
+
 <body>
+
     <form action="" method="POST" name="register">
-        <h1> Register Now! </h1>
-        <input type="text" name="firstname" placeholder="firstname" value="<?php echo isset($_POST['firstname']) ? $_POST['firstname'] : ''; ?>">
-        <input type="text" name="middleinitials" placeholder="middle name" value="<?php echo isset($_POST['middleinitials']) ? $_POST['middleinitials'] : ''; ?>">
-        <input type="text" name="lastname" placeholder="lastname" value="<?php echo isset($_POST['lastname']) ? $_POST['lastname'] : ''; ?>">
-        <input type="text" name="username" placeholder="username" value="<?php echo isset($_POST['username']) ? $_POST['username'] : ''; ?>">
-        <input type="text" name="address" placeholder="address" value="<?php echo isset($_POST['address']) ? $_POST['address'] : ''; ?>">
-        <input type="number" name="contact" placeholder="contact" value="<?php echo isset($_POST['contact']) ? $_POST['contact'] : ''; ?>">
+        <div class = "parent-container">
+            <div class= "child-container">
+                <div class= "header-container">
+                    <h1> Register Now! </h1>
+                </div>
+                    <div class= "inputs-container">
+                        <input type="text" name="firstname" placeholder="Firstname" value="<?php echo isset($_POST['firstname']) ? $_POST['firstname'] : ''; ?>">
+                        <input type="text" name="middleinitials" placeholder="Middle Initial" value="<?php echo isset($_POST['middleinitials']) ? $_POST['middleinitials'] : ''; ?>">
+                        <input type="text" name="lastname" placeholder="Lastname" value="<?php echo isset($_POST['lastname']) ? $_POST['lastname'] : ''; ?>">
+                        <input type="text" name="username" placeholder="Username" value="<?php echo isset($_POST['username']) ? $_POST['username'] : ''; ?>">
+                        <input type="text" name="address" placeholder="Address" value="<?php echo isset($_POST['address']) ? $_POST['address'] : ''; ?>">
+                        <input type="number" name="contact" placeholder="Contact" value="<?php echo isset($_POST['contact']) ? $_POST['contact'] : ''; ?>">
 
-        <input type="email" name="email" placeholder="E-mail address" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>">
-        <input type="password" name="password" id="password" class="password-input" placeholder="Password">
-        <input type="password" name="confirm_password" id="confirm_password" class="password-input" placeholder="Confirm Password">
+                        <input type="email" name="email" placeholder="E-mail address" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>">
+                        <input type="password" name="password" id="password" class="password-input" placeholder="Password">
+                        <input type="password" name="confirm_password" id="confirm_password" class="password-input" placeholder="Confirm Password">
 
-        <input type="checkbox" name="terms" id="terms"> <label for="terms">I accept the <a href="terms_and_agreement.php" target="_blank">Terms and Conditions</a></label>
-        <input type="submit" name="submit" value="Submit" name="register">
+                        <input type="checkbox" name="terms" id="terms"> <label for="terms">I accept the <a href="terms_and_agreement.php" target="_blank">Terms and Conditions</a></label>
+                        <input type="submit" name="submit" value="Submit" name="register">
+                    </div>
+            </div>
+        </div>
     </form>
 </body>
+
+
 
 <?php
 if (isset($_POST['submit'])) {
