@@ -53,4 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             updateSportModal.style.display = "none";
         }
     }
+
+
+    
 });

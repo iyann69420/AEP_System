@@ -124,7 +124,7 @@ if (isset($_POST['submit'])) {
                       </script>';
             }
         } else {
-            $sql = "INSERT INTO users (firstname, middleinitials, lastname, address,contact,username, email, password)
+            $sql = "INSERT INTO users (firstname, middleinitials, lastname,username ,address,contact, email, password)
             VALUES ('$firstname', '$middleinitials', '$lastname', '$username','$address','$contact', '$email', '$password')";
             $res = mysqli_query($conn, $sql);
 

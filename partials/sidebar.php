@@ -1,5 +1,6 @@
 <?php
 include('../connection/constants.php');
+include('../admin/login-check.php');
 
 ?>
 
@@ -55,7 +56,7 @@ include('../connection/constants.php');
                 <li><a href="orders.php">Orders</a></li>
                 <li><a href="reviews.php">Reviews</a></li>
                 <li><a href="sales-report.php">Sales Report</a></li>
-                <li><a href="admin.php">Admin</a></li>
+                <li><a href="<?php echo SITEURL; ?>admin/admin.php">Admin</a></li>
             </ul>
         </div>
         <a href="logout.php" class="logout">
