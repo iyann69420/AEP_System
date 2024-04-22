@@ -1,0 +1,60 @@
+ .Table
+    {
+        display: table;
+		margin: auto;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Row
+    {
+        display: inline;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 15px;
+        padding-right: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+    }
+	
+.hover {
+        border: 3px dashed red;
+}
+.sublist
+    {
+        display: table-cell;
+        padding-left: 15px;
+        padding-right: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+    }
+        body {
+        background-color: #4d4855;
+        background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+        color: white; /* Set text color to white for better visibility */
+    }
+
+    .jumbotron {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    }
+
+    select,
+    button {
+        background-color: #4d4855;
+        color: white;
+    }
+
