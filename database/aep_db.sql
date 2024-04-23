@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2024 at 09:43 AM
+-- Generation Time: Apr 23, 2024 at 05:31 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `userrole` tinyint(4) NOT NULL,
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `fullname`, `username`, `password`, `userrole`, `avatar`) VALUES
+(15, 'Ian ', 'admin', '$2y$10$HWkG5CF0Ctv2cewXOAPtpOQkqMkp49SRHl8EDAsiwaNlrMUyKNeAC', 0, '');
 
 -- --------------------------------------------------------
 
@@ -69,11 +76,12 @@ CREATE TABLE `sports` (
 --
 
 INSERT INTO `sports` (`sport_id`, `name`, `description`, `tables/courts`) VALUES
-(20, 'wag1', NULL, ''),
-(21, 'wag11', NULL, ''),
-(22, 'ayoko na', NULL, ''),
-(24, 'ayoko naa', NULL, ''),
-(25, 'aaa', NULL, '');
+(21, 'etoo naaa', NULL, ''),
+(22, 'etoooo naaaa', NULL, ''),
+(24, 'wahhhhhhhhhhhhh', NULL, ''),
+(25, 'scobido bido bido ahhh', NULL, ''),
+(26, 'asdas', NULL, ''),
+(27, 'asdasdas', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -99,7 +107,10 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `firstname`, `middleinitials`, `lastname`, `contact`, `address`, `email`, `password`) VALUES
 (1, '09161661368', 'Ian', 'B', 'Salgado', 'Trecw', 'ayygoo', 'wow@gmail.com', '$2y$10$nVMdNkrZttxTxhCpaOvlTueirMJqGP/tcDaeUTqGJq/'),
-(2, '09161661368', 'Ian', 'B', 'Salgado', 'Trecw', 'ayygoo', 'ejpower@gmail.com', '$2y$10$hIOYJklmmFvrCadWisTxjeZv7Ld17B4OfI0n2/RNOFK');
+(2, '09161661368', 'Ian', 'B', 'Salgado', 'Trecw', 'ayygoo', 'ejpower@gmail.com', '$2y$10$hIOYJklmmFvrCadWisTxjeZv7Ld17B4OfI0n2/RNOFK'),
+(3, '9123308104', 'krongkrong', 'Y', 'witwiw', 'ssssssssssss', 'krongg', 'krongiii1212sale@gmail.com', '$2y$10$pxSRfVvIsk9i0na/rZW4.ebFXN63Z/ufZ1R6zz77zNz'),
+(4, 'admin', 'asdas', 'a', 'assasasasa', '1212', 'ssssssssssss', 'kronsgiii1212sale@gmail.com', '$2y$10$N0lKe7KIDPVys7RlfoGPOOLPIwqHQojcw.5T17FTVel'),
+(5, 'admina', 'asdas', 'a', 'salgado', '1212', 'ssssssssssss', 'kronsagiii1212sale@gmail.com', '$2y$10$/eTOqVaSRiAbAkHgVqaJ.uu6VFhSKkVQgN4f1z9r94z');
 
 --
 -- Indexes for dumped tables
@@ -139,7 +150,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `reservations`
@@ -151,13 +162,13 @@ ALTER TABLE `reservations`
 -- AUTO_INCREMENT for table `sports`
 --
 ALTER TABLE `sports`
-  MODIFY `sport_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `sport_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
